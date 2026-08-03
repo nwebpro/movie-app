@@ -10,7 +10,7 @@ function TabIcon({ focused, icon, title }: any) {
 		return (
 			<ImageBackground
 				source={images.highlight}
-				className="flex flex-row w-full flex-1 min-w-[112px] min-h-14 justify-center items-center rounded-full overflow-hidden"
+				className="flex flex-row w-full flex-1 min-w-[112px] min-h-[51px] mt-[20px] justify-center items-center rounded-full overflow-hidden"
 			>
 				<Image source={icon} tintColor="#151312" className="size-5" />
 				<Text className="text-secondary text-base font-semibold ml-2">
@@ -21,7 +21,7 @@ function TabIcon({ focused, icon, title }: any) {
 	}
 
 	return (
-		<View className="size-full justify-center items-center rounded-full">
+		<View className="flex flex-row w-full flex-1 mt-5 justify-center items-center rounded-full">
 			<Image source={icon} tintColor="#A8B5DB" className="size-5" />
 		</View>
 	);
@@ -29,7 +29,6 @@ function TabIcon({ focused, icon, title }: any) {
 
 export default function TabsLayout() {
 	const insets = useSafeAreaInsets();
-	const bottomMargin = insets.bottom > 0 ? insets.bottom + 10 : 20;
 
 	return (
 		<Tabs
@@ -45,7 +44,7 @@ export default function TabsLayout() {
 					backgroundColor: '#0F0D23',
 					borderRadius: 50,
 					marginHorizontal: 20,
-					marginBottom: bottomMargin,
+					marginBottom: 48,
 					height: 52,
 					position: 'absolute',
 					overflow: 'hidden',
