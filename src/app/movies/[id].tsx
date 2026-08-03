@@ -4,7 +4,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 export default function MovieDetailsScreen() {
 	return (
 		<SafeAreaView className="flex-1 items-center justify-center">
-			<Text>MovieDetailsScreen</Text>
+			<Text>MovieDetails Screen</Text>
 		</SafeAreaView>
 	);
 }

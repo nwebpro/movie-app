@@ -3,15 +3,15 @@ import './global.css';
 
 export default function RootLayout() {
 	return (
-		<Stack>
+		<Stack initialRouteName="(tabs)">
 			<Stack.Screen
-				name="movies/[id]"
+				name="(tabs)"
 				options={{
 					headerShown: false,
 				}}
 			/>
 			<Stack.Screen
-				name="(tabs)"
+				name="movies/[id]"
 				options={{
 					headerShown: false,
 				}}
